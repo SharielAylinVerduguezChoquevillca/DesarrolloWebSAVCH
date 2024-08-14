@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93d9ea;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las cajas */
+}
+
+.box {
+    width: 280px;
+    height: 480px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Para asegurarse de que el contenido no desborde */
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    width: 100%;
+    background-color: salmon;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 40px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Espacio entre los contenedores de texto */
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.item {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(159, 159, 159, 0.1);
+    text-align: center; /* Centra el texto dentro del item */
+    overflow: hidden;
+}
+
+.item p {
+    margin: 0;
+    text-align: center;
+}
+
+.item-header {
+    background-color: #f0f0f0; /* Fondo del contenedor 'Compra' */
+    border: 1px solid #ddd;    /* Borde opcional para destacar el contenedor */
+    border-radius: 4px;        /* Bordes redondeados opcionales */
+    padding: 8px;              /* Espaciado dentro del contenedor */
+    margin-bottom: 10px;       /* Espacio entre el encabezado y el contenido */
+    text-align: center;        /* Centra el texto dentro del contenedor */
+    width: 50%;
+}
