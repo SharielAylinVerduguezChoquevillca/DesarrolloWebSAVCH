@@ -1,0 +1,156 @@
+.general {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 1000px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FABF8F ;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+}
+
+.membrete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.letraDeMem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.izquierdo {
+    border-right: 1px solid black;
+}
+
+.datosPer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.carrera {
+    background-color: #D9D9D9;
+}
+
+.semestre {
+    background-color: #92D050;
+}
+
+.carrera, .semestre {
+    width: 50%; 
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 10px
+}
+
+.apartado {
+    width: 120px;
+    height: 400px;
+    background-color: white; 
+    margin-right: 20px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    background-color: #2d2a2a;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+}
+
+a.botonesAmarillos {
+    background-color: #FFFF66;
+    border-color: red;
+    width: 180px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+    border: 5px solid rgb(255, 0, 0);
+    display: inline-block;
+    text-align: center;
+    background-color: #FFFF66;
+    color: #000;
+    font-size: 16px;
+}
+
+
+.cuerpo {
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding: 100px;
+    width: 79.5%;
+    justify-content: flex-start;
+}
+
+.itemCuerpo {
+    background-color: #ffffff;
+    padding: 20px;
+    color: #D9D9D9;
+}
+
+.pie {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFF;
+    border-top: 2px solid black;
+    font-size: 18px;
+    width: 100%;
+}
+
+.membrete img {
+    width: 120px;
+    height: auto;
+}
+
+.membrete img:first-child {
+    width: 180px;
+    height: auto;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.video, .imagen {
+    padding: 10px;
+}
+
+#redU {
+    color: #C60000;
+}
+
+#black {
+    color: #0070C0;
+}
+
+#celeste {
+    color: #ffffff;
+}
+
+#yellow {
+    color: #FFFF66;
+}
+
+#green {
+    color: #92D050;
+}

@@ -1,0 +1,21 @@
+<?php
+$conn = new mysqli("localhost", "root", "123", "bd_banco");
+
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+$correo_actual = $_POST['correo_actual'];
+$nuevo_correo = $_POST['correo'];
+
+$sql = "UPDATE usuarios SET correo='$nuevo_correo' WHERE correo='$correo_actual'";
+
+if ($conn->query($sql) === TRUE) {
+    header("Location: pregunta4.php");
+    exit();
+} else {
+    echo "Error actualizando el correo: " . $conn->error;
+}
+
+$conn->close();
+?>
