@@ -1,0 +1,59 @@
+<?php
+include "conexion.php";
+session_start();
+$nombres = $_POST['nombres'];
+$apellidos = $_POST['apellidos'];
+$cu=$_POST['cu'];
+$sexo=$_POST['sexo'];
+$id_carrera=$_POST['id_carrera'];
+$sql="SELECT id,nombres,apellidos,cu,sexo,id_carrera FROM Alumnos;";
+$resultado=$con->query($sql);
+?>
+<table style="border-collapse:collapse;border:1px solid black; width:800px;height:80px;">
+    <tr style="border-collapse:collapse;border:1px solid black">
+        <th style="border-collapse:collapse;border:1px solid black">Nro</th>
+        <th style="border-collapse:collapse;border:1px solid black">Nombres</th>
+        <th style="border-collapse:collapse;border:1px solid black">Apellidos</th>
+        <th style="border-collapse:collapse;border:1px solid black">CU</th>
+        <th style="border-collapse:collapse;border:1px solid black">Sexo</th>
+        <th style="border-collapse:collapse;border:1px solid black">Carrera</th>
+
+    </tr>
+    <?php
+    for($i=1;$i<=$_SESSION['n'];$i++)
+    {
+        while($fila=$resultado->fetch_assoc())
+        {
+        ?>
+        <tr style="border-collapse:collapse;border:1px solid black;height:30px;">
+            <td style="border-collapse:collapse;border:1px solid black">
+
+                <?php echo $fila['id'];?>
+            </td>
+            <td style="border-collapse:collapse;border:1px solid black">
+                <?php echo $fila['nombres'];?>
+
+            </td>
+            <td style="border-collapse:collapse;border:1px solid black">
+                <?php echo $fila['apellidos'];?>
+
+            </td>
+            <td style="border-collapse:collapse;border:1px solid black">
+                <?php echo $fila['cu'];?>
+            
+            </td>
+            <td style="border-collapse:collapse;border:1px solid black">
+                <?php echo $fila['sexo'];?>
+
+            </td>
+            <td style="border-collapse:collapse;border:1px solid black">
+                <?php echo $fila['id_carrera'];?>
+            
+            </td>
+        </tr>
+    <?php
+        }
+    }
+    ?>
+</table>
+?>

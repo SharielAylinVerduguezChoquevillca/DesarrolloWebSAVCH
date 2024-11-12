@@ -1,0 +1,23 @@
+<?php
+    include "conexion.php";
+    $nombres=$_POST['nombres'];
+    $apellidos=$_POST['apellidos'];
+    $cu=$_POST['cu'];
+    $sexo=$_POST['sexo'];
+    $id_carrera=$_POST['id_carrera'];
+    $sql="INSERT INTO Alumnos (nombres,apellidos,cu,sexo,id_carrera) values('$nombres','$apellidos','$cu','$sexo',$id_carrera);";
+    $resultado=$con->query($sql);
+    if($resultado)
+    {
+        ?>
+        <h1>Datos insertados correctamente</h1>
+        <meta http-equiv="refresh" content="3; url=ALumnos.php">
+
+    <?php
+    }else{
+        echo "Error al insertar los datos";
+    }
+    
+
+
+?>
