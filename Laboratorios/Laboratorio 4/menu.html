@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente de Correo Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <a href="redactar.html" id="redactar">Redactar</a>
+    <div id="sidebar">
+        <button id="entrada" onclick="mostrarCorreosEntrada('entrada')">Bandeja de Entrada</button>
+        <button id="salida" onclick="mostrarCorreosSalida('salida')">Bandeja de Salida</button>
+    </div>
+    <div id="tabla-correos"></div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Mensaje del Correo</h2>
+        <p id="mensaje-correo"></p>
+        </div>
+    </div>
+
+    <script src="ajax.js"></script>
+</body>
+</html>
