@@ -1,0 +1,200 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 100% !important;
+}
+
+.bloque {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.iz {
+    background-color: rgb(49, 108, 156);
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    min-height: 100vh;
+}
+
+.der {
+    width: calc(100% - 150px);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenido {
+    flex: 1;
+    min-height: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 85);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.item2 {
+    display: flex;
+    list-style: none;
+}
+
+.item2 li {
+    margin: 5px;
+}
+
+.barra {
+    list-style: none;
+}
+.image{
+    margin-bottom: 40px;
+}
+
+.barra a {
+    text-decoration: none;
+    color: white;
+}
+.barra li{
+    margin: 15px;
+    margin-left: 30px;
+
+
+}
+
+
+
+.contenedores {
+    display: flex;
+}
+.arriba {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.arriba .card {
+    margin: 0 auto;
+}
+
+.arriba .card img {
+    border-radius: 200px;
+    margin: 0 auto;
+}
+
+
+
+
+.card-title, 
+.card-text,.card-body .btn  {
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.card-body h5,
+.card-body p {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.abajo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000;
+  }
+  
+
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative; 
+  }
+  
+
+  .modal input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .modal button:hover {
+    background-color: #45a049;
+  }
+  
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .close:hover {
+    color: #d00;
+  }
+  
+
+
+
